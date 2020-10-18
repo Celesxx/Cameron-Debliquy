@@ -1,0 +1,85 @@
+body
+{
+    position: relative;
+    font-size: 15px;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+    grid-template-rows: 0.1fr 1fr repeat(2, 0.5fr) 0.25fr 0.25fr;
+    gap: 5em;
+    min-width: 100vh;
+    color: white;
+    background-color: #1b1d2b;
+}
+.margin
+{
+    margin: 10px;
+}
+
+.menu
+{
+    z-index: 1;
+    position: fixed;
+    max-height: 100px;
+    width: 100%;
+}
+
+.menuUl
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.menuLi
+{
+    padding: 1rem 2rem 1.15rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: auto;
+}
+
+.menuLi:hover
+{
+    border: 2px solid rgb(122, 122, 122);
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.footer
+{
+    background: #f2f3f7;
+    box-shadow: 10px 5px 5px darkgray;
+    grid-column: 1/-1;
+    grid-row: 6;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.footerUl
+{
+    grid-column: 1;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.footerLink
+{
+    grid-column: 2;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+a:link
+{
+    color: white;
+}
+a:hover
+{
+    font-weight: bold;
+}
+
+.box
+{
+    background: #2a2c3e;
+    box-shadow: 10px 5px 5px black;
+}
+

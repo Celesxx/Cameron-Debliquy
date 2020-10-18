@@ -1,0 +1,248 @@
+.indexStart {
+    height: 700px;
+    grid-column: 1/-1;
+    grid-row: 2;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    background-image: url(../images/me.jpg);
+    opacity: 0.7;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.textTitle
+{
+    grid-column: 1;
+    mix-blend-mode: difference;
+    font-size: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    margin-left: auto;
+}
+.contentIndex
+{
+    grid-column: 1;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 25px;
+    mix-blend-mode: difference;
+    text-align: center;
+}
+.picture
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+.img
+{
+    height: 700px;
+}
+
+/* About me */
+.AboutMe
+{
+    height: 500px;
+    grid-row: 3;
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 1em;
+}
+
+.descriptionAboutMe
+{
+    grid-column: 1/-1;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+    /* Card */
+    .cards-liste {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .cards {
+        margin: 30px auto;
+        width: 300px;
+        height: 300px;
+        border-radius: 40px;
+        box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+        cursor: pointer;
+        transition: 0.4s;
+    }
+
+    .cards .card_image {
+        width: inherit;
+        height: inherit;
+        border-radius: 40px;
+    }
+
+    .cards .card_image img {
+        width: inherit;
+        height: inherit;
+        border-radius: 40px;
+        object-fit: cover;
+    }
+
+    .cards .card_title {
+        text-align: center;
+        border-radius: 0px 0px 40px 40px;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+        margin-top: -80px;
+        height: 40px;
+    }
+
+    .cards:hover {
+        transform: scale(0.9, 0.9);
+        box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25),
+        -5px -5px 30px 15px rgba(0,0,0,0.22);
+    }
+
+    .title-white {
+        color: white;
+    }
+
+    .title-black {
+        color: black;
+    }
+
+    @media all and (max-width: 500px) {
+        .card-list {
+            /* On small screens, we are no longer using row direction but column */
+            flex-direction: column;
+        }
+    }
+/* fin about me */
+
+/* skill */
+.skills
+{
+    height: 500px;
+    grid-row: 4;
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr
+}
+
+.titleSkill
+{
+    margin-left: auto;
+    margin-right: auto;
+    grid-column: 1/-1;
+}
+.progressDiv
+{
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+    /* progress bar */
+
+    .progress-title{
+        color: white;
+        font-size: 18px;
+        font-weight: 700;
+        margin: 0 0 20px;
+    }
+    .progressBar
+    {
+        display: flex;
+        height: 2rem;
+        overflow: hidden;
+        font-size: 1em;
+        background-color: #acabab;
+        border-radius: 20px;
+        margin-bottom: 40px;
+    }
+    .progressBar .progress-bar{
+        border-radius: 20px;
+        border:  1px solid #000;
+        -webkit-animation: animate-positive 2s;
+        animation: animate-positive 2s;
+    }
+@-webkit-keyframes animate-positive{
+    0% { width: 0; }
+}
+@keyframes animate-positive{
+    0% { width: 0; }
+}
+
+/* fin skill */
+
+
+
+
+
+/* formation & experience */
+
+.Formation
+{
+    grid-row: 5;
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-rows: 0.25fr 1fr 0.25fr 1fr;
+}
+
+.titreExperience
+{
+    margin-left: auto;
+    margin-right: auto;
+    grid-column: 1/-1;
+    grid-row: 3;
+}
+.cardEperience
+{
+    grid-column: 1/-1;
+    grid-row: 4;
+}
+    /* card formation */
+
+    .card
+    {
+        border: 1px solid black;
+    }
+    .card-header
+    {
+        background:#2a2c3e;
+    }
+    .card-body
+    {
+        display: grid;
+        grid-template-rows: 1fr 0.5fr;
+        background:#2a2c3e;
+    }
+    .cardDescription
+    {
+        grid-column: 1/-1;
+        grid-row: 1;
+    }
+    .cardInformation
+    {
+        grid-column: 1/-1;
+        grid-row: 2;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .logoImg
+    {
+        height: 120px;
+        width: 120px;
+    }
+    .centeredCard
+    {
+        grid-row: 1;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+    }
+/* fin formation */
